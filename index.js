@@ -5,9 +5,13 @@ document.querySelector("input").onchange = function (e) {
 };
 
 document.getElementById("submit").onclick = function () {
-    if (countCookies == 10) {
-        alert(" верно ");
+    if (countCookies) {
+        if (countCookies == 10) {
+            alert(" верно ");
+        } else {
+            alert(" неверно ");
+        }
     } else {
-        alert(" неверно ");
+        alert("стоит заполнить поле ввода");
     }
 };
